@@ -1,4 +1,4 @@
-# Progress (42:48) [Video](https://youtu.be/wm5gMKuwSYk)
+# Progress (01:15:45) [Video](https://youtu.be/wm5gMKuwSYk)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
