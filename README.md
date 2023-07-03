@@ -1,10 +1,33 @@
-# Progress (02:31:40) [Video](https://youtu.be/wm5gMKuwSYk)
+# Next.js Prompt Management Project
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome to the Next.js Prompt Management Project! This project provides a user-friendly interface for creating, reading, updating, and deleting prompts. Additionally, it offers powerful search functionality and allows you to view user-specific prompts with a simple click.
+
+## Features
+
+- **Prompt Management**: Create, read, update, and delete prompts effortlessly.
+- **Copy Prompts**: Conveniently copy prompts from other users with a single click.
+- **Search**: Find prompts by username, tags, or prompt content keyword.
+- **User-Specific Prompts**: Easily access prompts from specific users by clicking on their image or name.
+- **Flexible Usage**: Use prompts in any context or project that requires creative inspiration.
+- **User-Friendly Interface**: Enjoy an intuitive and easy-to-use interface for seamless prompt management.
+- **Collaboration**: Collaborate with other users by sharing and exchanging prompts.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/jareerzeenam/next-app-practice.git
+   ```
+
+2. Install the dependencies:
+
+   ```
+   cd next-app-practice
+   npm install
+   ```
+
+3. Start the development server:
 
 ```bash
 npm run dev
@@ -14,23 +37,30 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+We welcome contributions to enhance the project and make it even better. To contribute, please follow these steps:
 
-## Learn More
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your forked repository.
+5. Submit a pull request to the main repository.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the [MIT License](LICENSE).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Feedback and Support
 
-## Deploy on Vercel
+If you have any feedback or need support, please [open an issue](https://github.com/jareerzeenam/next-app-practice/issues) in the repository. We'd be happy to assist you!
+
+## Deployed on Vercel [Live URI](https://next-app-practice-six.vercel.app/)
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Let's create, share, and explore prompts together! Happy coding!
