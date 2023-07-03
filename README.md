@@ -57,7 +57,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 If you have any feedback or need support, please [open an issue](https://github.com/jareerzeenam/next-app-practice/issues) in the repository. We'd be happy to assist you!
 
-## Deployed on Vercel [Live URI](https://next-app-practice-six.vercel.app/)
+## Deployed on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
