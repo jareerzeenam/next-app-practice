@@ -11,6 +11,7 @@ export const connectToDB = async () => {
   }
 
   try {
+    // Note: If you have connected to a proxy network Ex: university internet this will refuse connecting to the mongodb
     await mongoose.connect(process.env.MONGODB_URI, {
       dbName: 'share_prompt',
       useNewUrlParser: true,

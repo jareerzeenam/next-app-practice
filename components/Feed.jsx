@@ -7,8 +7,8 @@ import PromptCard from './PromptCard';
 // Prompt Card Component
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
-    <div className='mt-16 prompt_layout'>
-      { data.map((post) => (
+    <div className="mt-16 prompt_layout">
+      {data.map((post) => (
         <PromptCard
           key={post._id}
           post={post}
@@ -16,24 +16,23 @@ const PromptCardList = ({ data, handleTagClick }) => {
         />
       ))}
     </div>
-  )
-}
+  );
+};
 
 const Feed = () => {
   const [allPosts, setAllPosts] = useState([]);
-
 
   const [searchText, setSearchText] = useState('');
   const [searchTimeout, setSearchTimeout] = useState(null);
   const [searchedResults, setSearchedResults] = useState([]);
 
-  // Fetch all prompts 
+  // Fetch all prompts
   const fetchPrompts = async () => {
     const response = await fetch('/api/prompt');
     const data = await response.json();
 
     setAllPosts(data);
-  }
+  };
 
   useEffect(() => {
     fetchPrompts();
@@ -41,8 +40,13 @@ const Feed = () => {
 
   // Handle filter by clicked or given content (common function)
   const filterPrompts = (searchText) => {
-    const regex = new RegExp(searchText, "i");
-    return allPosts.filter((item) => regex.test(item.creator.username) || regex.test(item.tag) || regex.test(item.prompt));
+    const regex = new RegExp(searchText, 'i');
+    return allPosts.filter(
+      (item) =>
+        regex.test(item.creator?.username) ||
+        regex.test(item.tag) ||
+        regex.test(item.prompt)
+    );
   };
 
   // Handle search input change
@@ -55,12 +59,12 @@ const Feed = () => {
         const searchResult = filterPrompts(e.target.value);
         setSearchedResults(searchResult);
       }, 500)
-    )
-  }
+    );
+  };
 
-  // Handle Tag click search 
+  // Handle Tag click search
   const handleTagClick = (tagName) => {
-    // set search text to clicked tag name 
+    // set search text to clicked tag name
     setSearchText(tagName);
 
     const searchResult = filterPrompts(tagName);
@@ -68,15 +72,15 @@ const Feed = () => {
   };
 
   return (
-    <section className='feed'>
-      <form className='relative w-full flex-center'>
-        <input 
-        type='text'
-        placeholder='Search for tags or username'
-        value={searchText}
-        onChange={handleSearchChange}
-        required
-        className='search_input peer'
+    <section className="feed">
+      <form className="relative w-full flex-center">
+        <input
+          type="text"
+          placeholder="Search for tags or username"
+          value={searchText}
+          onChange={handleSearchChange}
+          required
+          className="search_input peer"
         />
       </form>
 
@@ -86,11 +90,13 @@ const Feed = () => {
           handleTagClick={handleTagClick}
         />
       ) : (
-        <PromptCardList data={allPosts} handleTagClick={handleTagClick} />
+        <PromptCardList
+          data={allPosts}
+          handleTagClick={handleTagClick}
+        />
       )}
-      
     </section>
-  )
-}
+  );
+};
 
-export default Feed
+export default Feed;
